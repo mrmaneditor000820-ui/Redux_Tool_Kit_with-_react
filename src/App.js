@@ -1,6 +1,7 @@
-
+import React from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { increment, decrement, reset } from "./counterSlice"
+import "./App.css"
 
 function App() {
 
@@ -13,12 +14,12 @@ const dispatch = useDispatch()
 
   return (
     <>
-    <h1>{count}</h1>
+    <h1 className="counter-display">{count}</h1>
 
 
-    <button onClick={()=> dispatch(increment())}>increment</button>
-    <button onClick={()=> dispatch(decrement())}>decrement</button>
-    <button onClick={()=> dispatch(reset())}>reset</button>
+    <button className="btn btn-increment" onClick={()=> dispatch(increment())}>increment</button>
+    <button className="btn btn-decrement" onClick={()=> dispatch(decrement())}>decrement</button>
+    <button className="btn btn-reset" onClick={()=> dispatch(reset())}>reset</button>
     </>
   )
 }
