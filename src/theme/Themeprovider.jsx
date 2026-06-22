@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react'
 export const Themecontext = createContext()
 
 function Themeprovider({children}) {
-  const [theme, setTheme] = useState(<img src="src\theme\bulb_transparent.png" alt="" />)
+  const [theme, setTheme] = useState()
 
     const toogletheme = ()=>{
         setTheme(theme === "light" ? "dark" : "light")  

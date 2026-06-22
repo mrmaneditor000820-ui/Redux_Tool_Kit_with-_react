@@ -34,16 +34,16 @@ import transparentBulb from './theme/bulb_transparent.png'
 import glowingBulb from './theme/bulb_glowing.png'
 
 function App() {
-  const {theme,toogletheme} = useContext(Themecontext);
+  const { theme, toogletheme } = useContext(Themecontext);
   return (
     <>
-    <div style={{display:"flex",justifyContent:"center",border:"5px solid blue",width:"50%",height:"50",borderRadius:"50px",margin:"100px auto"}}>
+      <div style={{ display: "flex", justifyContent: "center", border: "5px solid blue", width: "50%", height: "500px", borderRadius: "50px", margin: "100px auto" }}>
 
-     <img style={{width:"500px"}}
-      src={theme === "light" ? glowingBulb : transparentBulb}
-      alt="Toggle theme"
-      onClick={toogletheme}
-      style={{ cursor: 'pointer' }}></img>
+        <img style={{ width: "50px" }}
+          src={theme === "light" ? glowingBulb : transparentBulb}
+          alt="Toggle theme"
+          onClick={toogletheme}
+          style={{ cursor: 'pointer' }}></img>
       </div>
     </>
   )
