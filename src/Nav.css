@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navtop {
+  background-color: #1e293b;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navtop a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+
+.navtop a:hover {
+  color: #38bdf8;
+}
+
+.navtop a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navtop a:hover::after {
+  width: 100%;
+}

@@ -110,15 +110,13 @@
 
 
 import React from 'react'
-import  Counter from './Counter'
+import Routing from './Routing'
+
 
 function App() {
   return (
     <>
-    <a href={Counter}>
-    Counter
-    </a>
-    
+    <Routing/>
     </>
   )
 }

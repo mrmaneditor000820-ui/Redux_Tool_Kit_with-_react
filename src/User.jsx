@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "./userSlice";
-import "./App.css";
+import "./User.css";
 
 function App() {
   const user = useSelector((state) => state.user.user);
