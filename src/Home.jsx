@@ -1,6 +1,6 @@
 import React from 'react'
-import Nav from './Nav'
-import Navbar from './Navbar';
+import Nav from './navbartop/Nav'
+import Navbar from './herosection/Navbar';
 
 function Home() {
   return (

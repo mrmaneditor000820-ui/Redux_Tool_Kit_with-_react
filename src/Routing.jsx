@@ -1,8 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Navbar from "./Navbar";
 import Home from "./Home";
-import Counter from "./Counter";
-import User from "./User";
+import Counter from "./counter/Counter";
+import User from "./user/User";
 
 function App() {
   return (
