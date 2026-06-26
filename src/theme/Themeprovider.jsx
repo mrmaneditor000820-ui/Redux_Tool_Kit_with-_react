@@ -2,7 +2,7 @@ import React, { createContext, useState } from 'react'
 export const Themecontext = createContext()
 
 function Themeprovider({children}) {
-  const [theme, setTheme] = useState()
+  const [theme, setTheme] = useState('light')
 
     const toogletheme = ()=>{
         setTheme(theme === "light" ? "dark" : "light")  
@@ -10,8 +10,7 @@ function Themeprovider({children}) {
 
   return (
     <Themecontext.Provider value={{theme,toogletheme}}>
-  {children}
-
+      {children}
     </Themecontext.Provider>
   )
 }
