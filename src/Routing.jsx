@@ -3,6 +3,7 @@ import Home from "./Home";
 import Counter from "./counter/Counter";
 import User from "./user/User";
 import Bulb from "./theme/Bulb";
+import Footer from "./footer/Footer";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/user" element={<User />} />
         <Route path="/Bulb" element={< Bulb/>} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
     </>
   );
