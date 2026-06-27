@@ -7,7 +7,7 @@ function Bulb() {
     const { theme, toogletheme } = useContext(Themecontext);
     return (
         <>
-            <div style={{ display: "flex", justifyContent: "center", border: "5px solid blue", width: "50%", height: "500px", borderRadius: "50px", margin: "100px auto" }}>
+            <div style={{ display: "flex", justifyContent: "center", border: "5px solid blue", width: "50%", height: "400px", borderRadius: "50px", margin: "100px auto" }}>
 
                 <img style={{ width: "50px" }}
                     src={theme === "On" ? glowingBulb : transparentBulb}

@@ -4,12 +4,14 @@ import Counter from "./counter/Counter";
 import User from "./user/User";
 import Bulb from "./theme/Bulb";
 import Footer from "./footer/Footer";
+import Nav from './navbartop/Nav'
 
 
 function App() {
   return (
     <>
     <BrowserRouter>
+    <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/counter" element={<Counter />} />

@@ -1,12 +1,14 @@
 /* Counter Page */
 .counter-page {
-  min-height: 100vh;
-  background: #0d0d0d;
+  min-height: 400px;
+  background: #0f045f;
   color: #e8e8e8;
   font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 100px;
+  margin: 100px;
 }
 
 .counter-container {
