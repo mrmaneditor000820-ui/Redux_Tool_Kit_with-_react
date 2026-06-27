@@ -2,10 +2,10 @@ import React, { createContext, useState } from 'react'
 export const Themecontext = createContext()
 
 function Themeprovider({children}) {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('Off')
 
     const toogletheme = ()=>{
-        setTheme(theme === "light" ? "dark" : "light")  
+        setTheme(theme === "On" ? "Off" : "On")  
     }
 
   return (
